@@ -1,0 +1,29 @@
+<!-- <form #studentForm="ngForm" (ngSubmit)="saveData(studentForm.value)" class="col-6 m-auto  border border-dark"> -->
+<form [formGroup]="addStudent" (ngSubmit)="saveData()" class="col-6 m-auto  border border-dark my-5">
+
+    <div class="form-group">
+        <label class="my-2 mx-5 ">Name</label>
+        <span *ngIf="std && std.invalid && std.touched" style="color: red; font-size: 20px;"><b>Enter
+                Name.....!</b></span>
+        <input type="text" class="form-control" placeholder="Enter Student Name" name="name" formControlName="name">
+
+
+        <label class="my-2 mx-5">Email address</label>
+        <span *ngIf="email && email.invalid && email.touched" style="color: red; font-size: 20px;"><b>Enter
+                Email.....!</b></span>
+
+        <input type="email" class="form-control" placeholder="Enter Student Email" name="email" formControlName="email">
+
+    </div>
+
+    <button type="submit" [disabled]="addStudent.invalid" class="btn btn-primary my-4 mx-5 col-2">Submit</button>
+</form>
+<br>
+
+<div *ngIf="message" class="alert alert-success col-6  m-auto" role="alert">
+    SUccessful.....! Student Added
+    <button type="button" class="btn border border-dark my-5 bg-danger " (click)="removemsg()" data-dismiss="alert"
+        aria-label="Close">
+        <span aria-hidden="true" class="text-light">X</span>
+    </button>
+</div>

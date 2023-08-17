@@ -1,0 +1,19 @@
+<form [formGroup]="editStudent" (ngSubmit)="UpdateData()" class="col-6 m-auto  border border-dark">
+    <div class="form-group">
+        <label class="my-2 mx-5">Name</label>
+        <input type="text" class="form-control" placeholder="Enter Student Name" formControlName="name">
+        <label class="my-2 mx-5">Email address</label>
+        <input type="email" class="form-control" placeholder="Enter Student Email" formControlName="email">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary my-4 mx-5 col-2" [disabled]="editStudent.invalid">Submit</button>
+</form>
+<br>
+
+<div *ngIf="message" class="alert alert-success col-6  m-auto" role="alert">
+    SUccessful.....! Student Added
+    <button type="button" class="btn border border-dark my-5 bg-danger " (click)="removemessage()" data-dismiss="alert"
+        aria-label="Close">
+        <span aria-hidden="true" class="text-light">X</span>
+    </button>

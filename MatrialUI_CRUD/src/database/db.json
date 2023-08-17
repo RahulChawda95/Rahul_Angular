@@ -1,0 +1,249 @@
+{
+  "employee": [
+    {
+      "sal": "Mrs.",
+      "firstname": "Riya",
+      "lastname": "Jain",
+      "email": "Riya@gmail.com",
+      "dob": "2000-06-13T18:30:00.000Z",
+      "gender": "female",
+      "phoneNo": 7878785555,
+      "department": "Digital Marketing Manager",
+      "language": "English",
+      "salary": 12000,
+      "age": 23,
+      "id": 8
+    },
+    {
+      "sal": "Ms.",
+      "firstname": "Angella",
+      "lastname": "Mark",
+      "email": "Angle@gmail.com",
+      "dob": "2002-01-09T18:30:00.000Z",
+      "gender": "female",
+      "phoneNo": 7878765464,
+      "department": "Data Engineer",
+      "language": "English",
+      "salary": 25000,
+      "age": 21,
+      "id": 9
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "john",
+      "lastname": "mathue",
+      "email": "John@gmail.com",
+      "dob": "2001-06-20T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 1235687997,
+      "department": "Digital Marketing Manager",
+      "language": "English",
+      "salary": 55000,
+      "age": 22,
+      "id": 10
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Raj",
+      "lastname": "kundra",
+      "email": "Raj@emai.com",
+      "dob": "1998-12-31T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9497878255,
+      "department": "UI Developer",
+      "language": "Hindi",
+      "salary": 65000,
+      "age": 24,
+      "id": 11
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Raj",
+      "lastname": "kundra",
+      "email": "Raj@emai.com",
+      "dob": "1998-12-31T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9497878255,
+      "department": "UI Developer",
+      "language": "Hindi",
+      "salary": 65000,
+      "age": 24,
+      "id": 12
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Raj",
+      "lastname": "kundra",
+      "email": "Raj@emai.com",
+      "dob": "1998-12-31T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9497878255,
+      "department": "UI Developer",
+      "language": "Hindi",
+      "salary": 65000,
+      "age": 24,
+      "id": 13
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Raj",
+      "lastname": "kundra",
+      "email": "Raj@emai.com",
+      "dob": "1998-12-31T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9497878255,
+      "department": "UI Developer",
+      "language": "Hindi",
+      "salary": 65000,
+      "age": 24,
+      "id": 14
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Raj",
+      "lastname": "kundra",
+      "email": "Raj@emai.com",
+      "dob": "1998-12-31T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9497878255,
+      "department": "UI Developer",
+      "language": "Hindi",
+      "salary": 65000,
+      "age": 24,
+      "id": 15
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Raj",
+      "lastname": "kundra",
+      "email": "Raj@emai.com",
+      "dob": "1998-12-31T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9497878255,
+      "department": "UI Developer",
+      "language": "Hindi",
+      "salary": 65000,
+      "age": 24,
+      "id": 16
+    },
+    {
+      "sal": "Mr.",
+      "firstname": "Ankit",
+      "lastname": "Sharma",
+      "email": "Ankit@email.com",
+      "dob": "2000-07-11T18:30:00.000Z",
+      "gender": "male",
+      "phoneNo": 9911557575,
+      "department": "Artificial Intelligence Researcher",
+      "language": "English",
+      "salary": 40000,
+      "age": 23,
+      "id": 17
+    }
+  ],
+  
+  "departments": [
+    {
+      "id": 1,
+      "department": "Web Developer"
+    },
+    {
+      "id": 2,
+      "department": "Digital Marketing Manager"
+    },
+    {
+      "id": 3,
+      "department": "Artificial Intelligence Researcher"
+    },
+    {
+      "id": 4,
+      "department": "UI Developer"
+    },
+    {
+      "id": 5,
+      "department": "Front End Developer"
+    },
+    {
+      "id": 6,
+      "department": "Game Developer"
+    },
+    {
+      "id": 7,
+      "department": "Full Stack Developer"
+    },
+    {
+      "id": 8,
+      "department": "Data Engineer"
+    },
+    {
+      "id": 9,
+      "department": "Cloud administrator"
+    },
+    {
+      "id": 10,
+      "department": "Blockchain Developer"
+    },
+    {
+      "id": 11,
+      "department": "AWS DevOps Engineer"
+    },
+    {
+      "id": 12,
+      "department": "Android Developer"
+    },
+    {
+      "id": 13,
+      "department": ".NET Developer"
+    },
+    {
+      "id": 14,
+      "department": "Machine Learning Engineer"
+    },
+    {
+      "id": 15,
+      "department": "Big Data Engineer"
+    }
+  ],
+  "Language": [
+    {
+      "id": 1,
+      "language": "Gujrati"
+    },
+    {
+      "id": 2,
+      "language": "Hindi"
+    },
+    {
+      "id": 3,
+      "language": "English"
+    },
+    {
+      "id": 4,
+      "language": "Greek"
+    },
+    {
+      "id": 5,
+      "language": "French"
+    },
+    {
+      "id": 6,
+      "language": "Japanese"
+    },
+    {
+      "id": 7,
+      "language": "Telugu"
+    },
+    {
+      "id": 8,
+      "language": "Tamil"
+    },
+    {
+      "id": 9,
+      "language": "Spanish"
+    },
+    {
+      "id": 10,
+      "language": "Portuguese (Portugal)"
+    }
+  ]
+}

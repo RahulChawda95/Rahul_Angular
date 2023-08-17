@@ -1,0 +1,41 @@
+form{
+  width: 100%;
+  
+mat-form-field
+{
+  width: 100%;
+}
+
+}
+.email{
+  width: 50%;
+}
+.mobileno
+{
+  width: 50%;
+}
+.row
+  {
+    margin-top: 5px;
+    display: flex;
+    height: auto;
+    gap: 10px;
+}
+  .select
+  {
+    width: 150px;
+  }
+  
+  .salary
+  {
+    width: 270px;
+  }
+  .actionbtn
+  {
+    padding: 0px 25px 25px;
+  
+  }
+  button{
+    flex: 0.75;
+  }
+  

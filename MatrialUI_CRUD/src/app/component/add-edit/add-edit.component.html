@@ -1,0 +1,111 @@
+<div mat-dialog-title>
+    <h1>Employee Form</h1>
+</div>
+<form [formGroup]="AddEditForm" (ngSubmit)="submitForm()">
+
+    <div mat-dialog-content>
+        <div class="row">
+            <mat-form-field appearance="outline" class="select">
+                <mat-label>Select</mat-label>
+                <mat-select formControlName="sal">
+                    <mat-option value="Mr.">Mr.</mat-option>
+                    <mat-option value="Mrs.">Mrs.</mat-option>
+                    <mat-option value="Ms.">Ms.</mat-option>
+                    <mat-option value="Dr.">Dr.</mat-option>
+
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" placeholder="Enter First Name" formControlName="firstname">
+            </mat-form-field>
+
+            <span *ngIf="name1 && name1.invalid && name1.touched" style="color: red; font-size: 10px;">Enter
+                FirstName.....!</span>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" placeholder="Enter Last Name" formControlName="lastname">
+            </mat-form-field>
+            <span *ngIf="lname && lname.invalid && lname.touched" style="color: red; font-size: 10px;">Enter
+                LastName!</span>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Enter Email" formControlName="email">
+            </mat-form-field>
+            <span *ngIf="email && email.invalid && email.touched" style="color: red; font-size: 10px;">Enter
+                Email.....!</span>
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <mat-label>Mobile Number</mat-label>
+                <input matInput type="number" placeholder="Enter Mobile Number" formControlName="phoneNo">
+            </mat-form-field>
+            <span *ngIf="phone && phone.invalid && phone.touched" style="color: red; font-size: 10px;">Enter
+                10Digit Number!</span>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <mat-label>Department</mat-label>
+                <mat-select formControlName="department">
+
+                    <mat-option *ngFor="let val of department" [value]="val.department">{{val.department}}</mat-option>
+                </mat-select>
+                <span *ngIf="Department && Department.invalid && Department.touched"
+                    style="color: red; font-size: 10px;">Please, Select Department!</span>
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <mat-label>Language</mat-label>
+                <mat-select formControlName="language">
+                    <mat-option *ngFor=" let val of Language" [value]="val.language">{{val.language}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <span *ngIf="language && language.invalid && language.touched" style="color: red; font-size: 10px;">Please,
+                Select Language!</span>
+        </div>
+        <div class="row">
+            <mat-radio-group aria-label="select an option" formControlName="gender" style="width: 60%;">
+                <mat-label><b>Gender:</b> </mat-label>
+                <mat-radio-button value="male">Male</mat-radio-button>
+                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-radio-button value="others">Others</mat-radio-button>
+            </mat-radio-group>
+            <span *ngIf="gender && gender.invalid && gender.touched" style="color: red; font-size: 10px;">Please,
+                Select gender!</span>
+
+            <mat-form-field class="salary" appearance="outline" style="width: 50%;">
+                <input matInput type="number" placeholder="Enter Your Salary" formControlName="salary">
+            </mat-form-field>
+            <span *ngIf="salary && salary.invalid && salary.touched" style="color: red; font-size: 10px;">Please,
+                Write Salary!</span>
+
+
+        </div>
+        <div class="row">
+            <!-- <label> Salary:</label> -->
+
+            <!-- <label>Date Of Birth:</label> -->
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <input matInput [matDatepicker]="picker" placeholder="Birth Date" formControlName="dob">
+                <mat-hint>DD/MM/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <span *ngIf="dob && dob.invalid && dob.touched" style="color: red; font-size: 10px;">Please,
+                Select Your Birthdate!</span>
+            <mat-form-field appearance="outline" style="width: 50%;">
+                <mat-label>Age:</mat-label>
+                <input matInput type="number" formControlName="age" />
+            </mat-form-field>
+            <span *ngIf="age && age.invalid && age.touched" style="color: red; font-size: 10px;">Please,
+                Enter Age!</span>
+
+
+
+        </div>
+
+    </div>
+    <div mat-dialog-actions class="actionbtn">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update':'Save'}}</button>
+    </div>
+</form>

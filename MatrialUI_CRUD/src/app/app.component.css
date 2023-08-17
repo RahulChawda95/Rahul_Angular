@@ -1,0 +1,75 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  table {
+    width: 100%;
+    /* border: 1px solid; */
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+   
+  }
+  
+   
+  td, th {
+    width: 25%;
+  }
+  .idcontainer
+  {
+    width: 35px;
+    /* border: 1px solid; */
+  }
+  .firstname
+  {
+    width: 17%;
+    /* border: 1px solid; */
+  }
+  .email
+  {
+    width: 17%;
+    /* border: 1px solid; */
+  }
+  .gender
+  {
+    width: 10%;
+    /* border: 1px solid; */
+
+  }
+  .language
+  {
+    width: 10%;
+    /* border: 1px solid; */
+
+  }
+  .phone
+  {
+    width: 10%;
+    /* border: 1px solid; */
+  }
+  .salary
+  {
+    width: 10%;
+    /* border: 1px solid; */
+  }
+  .dob
+  {
+    width: 10%;
+    /* border: 1px solid; */
+  }
+  .age{
+    width: 5%;
+    /* border: 1px solid; */
+  }
+  .department
+  {
+    width: 5%;
+    /* border: 1px solid; */
+  }
+  .action
+  {
+    width: 25%;
+    /* border: 1px solid; */
+    /* display: flex; */
+  }
